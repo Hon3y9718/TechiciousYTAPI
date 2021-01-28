@@ -10,7 +10,7 @@ QnAString = ['Question and Answer', 'Questions and Answers']
 
 @app.errorhandler(404) 
 def ErrorHandler(e):
-    return 'You found nothing its a 404 Error'
+    return f'Hey Man, I found nothing seems there is a 404 Error... Check it out. ({e})'
 
 @app.route('/')
 def Home():
