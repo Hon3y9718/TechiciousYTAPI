@@ -9,7 +9,7 @@ rftString = ['Reflections for Today', 'Reflection for Today']
 QnAString = ['Question and Answer', 'Questions and Answers']
 
 @app.errorhandler(404) 
-def ErrorHandler():
+def ErrorHandler(e):
     return 'You found nothing its a 404 Error'
 
 @app.route('/')
