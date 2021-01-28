@@ -6,7 +6,7 @@ app = Flask(__name__)
 channel_id = 'UC5SMqP_8QsmPDWhNmjgInlg'
 uploads_playlist = 'UU5SMqP_8QsmPDWhNmjgInlg'
 rftString = ['Reflections for Today', 'Reflection for Today']
-QnAString = ['Question and Answer', 'Questions and Answers']
+QnAString = ['Question and Answer', 'Questions and Answers', 'Questions and Answer', 'Question and Answers']
 
 @app.errorhandler(404) 
 def ErrorHandler(e):
