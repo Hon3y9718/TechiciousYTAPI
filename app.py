@@ -16,7 +16,7 @@ def ErrorHandler(e):
 
 @app.route('/')
 def Home():
-    inforMation = 'In Order to get videos Related to \nQuestion and Answer - /qna\nReflection for Today - /rft \n All Except for QnA and RFT - /others \nFor All Videos - /Everything'
+    inforMation = 'In Order to get videos Related to \nQuestion and Answer - /qna\nReflection for Today - /rft \n All Except for QnA and RFT - /others'
     return inforMation
 
 @app.route('/qna')
