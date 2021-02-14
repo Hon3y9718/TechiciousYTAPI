@@ -53,6 +53,7 @@ def fetchRequiredData(FileName):
         VideoID = jsonObject[i]['snippet']['resourceId']['videoId']
         publishedAt = jsonObject[i]['snippet']['publishedAt']
         VideoUrl = 'https://www.youtube.com/watch?v='+VideoID
+        embedURL = 'https://www.youtube.com/embed/'+VideoID
 
         Dict = {'Main': {
             'title':title,
@@ -64,6 +65,7 @@ def fetchRequiredData(FileName):
             'VideoDetails':{
                 'videoId':VideoID,
                 'videoURL':VideoUrl,
+                'embedURL':embedURL,
                 'publishedAt': publishedAt,
                 'channelName':ChannelTitle
             }
